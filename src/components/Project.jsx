@@ -16,12 +16,14 @@ function Project(){
             logo: bookstore,
             name: "BookStore",
             desc: "Create a BookStore App using React and Tailwind CSS for front-end design and express mongodb and nodejs for back-end",
+            shareLink:"",
         },
         {
             id:2,
             logo: physiotheprist,
             name: "Physio at home",
             desc: "This is the full stack web application Frontend designed by react and backend designed by express nodejs and mongodb",
+            shareLink:"",
         },
         {
             
@@ -29,13 +31,15 @@ function Project(){
             logo: medihelp,
             name:"MediHelp",
             desc:"Developed MediHelp , a web application in the help of react for frontend and backend through mongodb and express",
+            shareLink:"",
         },
         {
             
             id:4,
             logo:Ecommerce,
             name:"E-commerce",
-            desc:"Designed by HTML CSS and JavaScript and deplay in netify,"
+            desc:"Designed by HTML CSS and JavaScript and deplay in netify",
+            shareLink:"https://master--stalwart-gecko-3be862.netlify.app/",
         },
         {
             
@@ -43,6 +47,7 @@ function Project(){
             logo:login,
             name: "Login_page",
             desc:"Successfully engineered and implemented a secure and user-friendly login and sign-up system utilizing a technology stack comprising HTML, CSS, JavaScript  ",
+            shareLink:"",
         },
         {
             
@@ -50,6 +55,7 @@ function Project(){
             logo: tictak,
             name: "Tic-tak-toe",
             desc:"Designed and implemented a Tic Tac Toe game using Html Css JavaScript in frontend development  ",
+            shareLink:"",
         },
     ];
     return(
@@ -59,7 +65,7 @@ function Project(){
             
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
                     {
-                        cardItem.map(({id,logo,name,desc})=>(
+                        cardItem.map(({id,logo,name,desc,shareLink})=>(
                             <div key={id} className=" md:w-[300px] md:h-[350] text-white shadow-md rounded-lg overflow-hidden relative group"> 
                                 <img src={logo} alt="" className="md:w-[300px] md:h-[350] " />
                                 <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-black/60 group-hover:backdeop-blur-sm duration-500">
@@ -68,7 +74,7 @@ function Project(){
                                             <h1 className="text-3xl font-bold">{name}</h1>
                                             <Fade cascode damping={0.05}>{desc}</Fade>
                                             <li className="text-3xl  md:text-3xl cursor-pointer flex flex-col items-center  ">
-                                                <a href="" target="_blank">
+                                                <a href={shareLink} target="_blank" rel="noopener noreferrer">
                                                     <CiShare1 className="" />    
                                                 </a>
                                             </li>
