@@ -6,7 +6,7 @@ function About(){
         },
         { 
             id:2,
-            text:"Experiance"
+            text:"Experience"
         },
         {
             id:3,
@@ -22,8 +22,7 @@ function About(){
                 </div>
                 <div className="md:w-1/2  order-2 md:order-2" >
                     <h1 className="text-3xl font-bold mb-5 ">About Me</h1>
-                    <p className="text-sm md:text-md text-justify">Hey there! I am Manzoor Elahi, a passionate individual exploring the captivating world of Artificial Intelligence and Data Science. I passed my high school degree from Sita Ram High School West Champaran (Bihar), intermidiate degree from Gulab Memorial college bettiah (Bihar)
-                     Currently pursuing my undergraduate degree at Siliguri Institute of Technology, West Bangal, my heart lies in UI development, web development, and problem-solving,  My portfolio showcases my growth, projects, and aspirations to make a positive impact through innovative solutions.</p>
+                    <p className="text-sm md:text-md text-justify">Hey there! I am Manzoor Elahi, a passionate individual exploring the captivating world of Artificial Intelligence and Data Science. I passed my high school degree from Sita Ram High School West Champaran (Bihar), intermediate degree from Gulab Memorial College Bettiah (Bihar). Currently pursuing my undergraduate degree at Siliguri Institute of Technology, West Bengal, my heart lies in UI development, web development, and problem-solving. My portfolio showcases my growth, projects, and aspirations to make a positive impact through innovative solutions.</p>
                     <br/>
                     <div className=" text-2xl">
                         <ul className="  flex space-x-7">
